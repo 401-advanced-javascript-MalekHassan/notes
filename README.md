@@ -26,7 +26,7 @@ These instructions will get you a copy of the project up and running on your loc
 
 2. Clone the repo
 
-git clone https://github.com/MalekHassan/notes-01.git
+git clone https://github.com/401-advanced-javascript-MalekHassan/notes.git
 
 ## Usage
 1. add note:
