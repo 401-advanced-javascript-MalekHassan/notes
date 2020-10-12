@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+    "test": "jest --verbose --coverage"
+    },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/401-advanced-javascript-MalekHassan/notes.git"
@@ -19,5 +19,8 @@
   "keywords": [],
   "dependencies": {
     "minimist": "^1.2.5"
+  },
+  "devDependencies": {
+    "jest": "^26.5.3"
   }
 }

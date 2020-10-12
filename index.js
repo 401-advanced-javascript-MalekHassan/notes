@@ -3,7 +3,7 @@
 const Input = require('./lib/input.js');
 const Notes = require('./lib/notes.js');
 
-const options = new Input();
-const newNotes = new Notes(options);
+const myInputs = new Input();
+const newNotes = new Notes();
 // console.log(options)
-newNotes.execute(options);
+newNotes.execute(myInputs);
