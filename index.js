@@ -2,8 +2,6 @@
 require('dotenv').config('.env');
 const Input = require('./lib/input.js');
 const Notes = require('./lib/notes.js');
-
-
 const mongoose = require('mongoose');
 const MONGODB_URI =  process.env.MONGODB_URI || 'mongodb://localhost:27017/notes';
 
