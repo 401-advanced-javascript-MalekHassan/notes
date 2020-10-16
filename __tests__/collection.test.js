@@ -13,9 +13,9 @@ describe('saving Module', ()=> {
         })
     })
     });
-    it('vaild list method case', ()=> {
+   it('vaild list method case', async()=> {
         let obj = { category: 'greating' };
-        return newColliction.list(obj).then((record) => {
+        await newColliction.list(obj).then((record) => {
             console.log(record, 'recoed');
             record.forEach((item) => {
              expect(item[category]).toEqual(obj[category])
