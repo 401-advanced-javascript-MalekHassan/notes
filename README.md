@@ -33,9 +33,11 @@ git clone https://github.com/401-advanced-javascript-MalekHassan/notes.git
  node index.js --add or -a 'note content'
 
 ## Architecture
+Check the UML diagram :
+- [UML](https://drive.google.com/file/d/1WmHeNk4vtkj19y-yfaR0aWGUz0Q81uGO/view?usp=sharing)
+
 This application was build with Node.js and it includes:
 - minimist package
-
 
 ## Change Log
 11-10-2020 6:15pm - you can add a note.
