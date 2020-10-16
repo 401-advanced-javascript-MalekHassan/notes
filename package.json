@@ -4,11 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start":"node index.js",
+    "test-watch":"jest --verbose --coverage --watchAll",
+    "start": "node index.js",
     "test": "jest --verbose --coverage",
-    "lint":"eslint'**/*.js'"
-
-    },
+    "lint": "eslint'**/*.js'"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/401-advanced-javascript-MalekHassan/notes.git"
@@ -21,7 +21,11 @@
   "homepage": "https://github.com/401-advanced-javascript-MalekHassan/notes#readme",
   "keywords": [],
   "dependencies": {
-    "minimist": "^1.2.5"
+    "@code-fellows/supergoose": "^1.0.11",
+    "@types/jest": "^26.0.14",
+    "dotenv": "^8.2.0",
+    "minimist": "^1.2.5",
+    "mongoose": "^5.10.9"
   },
   "devDependencies": {
     "jest": "^26.5.3"

@@ -3,6 +3,7 @@
 
 const Input = require('../lib/input.js');
 let myInputs = new Input();
+jest.spyOn(global.console, 'log');
 
 describe('Input Module', ()=> {
     it('getAdd() vaild case for action', ()=> {
@@ -18,6 +19,6 @@ describe('Input Module', ()=> {
   });
 
   it('getNote() defaults to ERROR when there is no values', ()=> {
-    expect(myInputs.getNote()).toEqual('Error: invalid note');
+    expect(myInputs.getNote()).toEqual(undefined);
   });
 });
