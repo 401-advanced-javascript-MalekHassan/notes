@@ -1,5 +1,12 @@
 'use strict';
 
+jest.mock('minimist');
+const minimist = require('minimist');
+minimist.mockImplementation(() => {
+  return {
+    a: 'note',
+  };
+});
 
 const Notes = require('../lib/notes.js');
 const notes = new Notes();
@@ -12,10 +19,11 @@ describe('Notes Module', ()=> {
     expect(console.log).toHaveBeenCalled();
   });
     
-  it('exexute() will log out notes when given', ()=> {
+  it('exexute() with valid inputs', ()=> {
     expect(notes.execute({action:'add',payload:'Hello'})).toEqual( notes.execute({action:'add',payload:'Hello'}));
   });
-  it('exexute() will log out notes when given', ()=> {
-    expect(console.log).toHaveBeenCalled();
+  it('exexute() with invalid inputs', ()=> {
+    let obj = {action:'s', payload:'ffff'};
+    expect(notes.execute(obj)).toEqual('Enter a valid action');
   });
 });
