@@ -1,5 +1,12 @@
 'use strict';
 
+jest.mock('minimist');
+const minimist = require('minimist');
+minimist.mockImplementation(() => {
+  return {
+    a: 'note',
+  };
+});
 
 const Input = require('../lib/input.js');
 let myInputs = new Input();
