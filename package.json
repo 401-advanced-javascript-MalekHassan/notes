@@ -4,10 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test-watch":"jest --verbose --coverage --watchAll",
+    "test-watch": "jest --verbose --coverage --watchAll",
     "start": "node index.js",
     "test": "jest --verbose --coverage",
-    "lint": "eslint'**/*.js'"
+    "lint": "eslint index.js lib/ __tests__/ "
   },
   "repository": {
     "type": "git",
@@ -28,6 +28,8 @@
     "mongoose": "^5.10.9"
   },
   "devDependencies": {
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.11.0",
     "jest": "^26.5.3"
   }
 }

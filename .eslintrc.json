@@ -1,4 +1,5 @@
 {
+  "parser": "babel-eslint",
     "globals": {
       "Mustache": true,
       "$": true
@@ -42,7 +43,7 @@
         }
       ],
       "no-trailing-spaces": "warn",
-      "new-cap": "warn",
+
       "no-redeclare": [
         "error",
         {
@@ -50,5 +51,6 @@
         }
       ],
       "eol-last": "error"
+      
     }
   }
