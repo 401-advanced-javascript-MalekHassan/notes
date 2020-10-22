@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node index.js",
     "test": "jest --verbose --coverage",
-    "lint": "eslint'**/*.js'"
+    "lint": "eslint index.js lib/ __tests__/ "
   },
   "repository": {
     "type": "git",
@@ -20,11 +20,13 @@
   "homepage": "https://github.com/401-advanced-javascript-MalekHassan/notes#readme",
   "keywords": [],
   "dependencies": {
+    "babel-eslint": "^10.1.0",
     "dotenv": "^8.2.0",
     "minimist": "^1.2.5",
     "mongoose": "^5.10.9"
   },
   "devDependencies": {
+    "eslint": "^7.11.0",
     "jest": "^26.5.3"
   }
 }
